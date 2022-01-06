@@ -11,6 +11,9 @@
     />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -42,6 +45,10 @@
           <dd>タイトルタイトルタイトルタイトル</dd>
           <dt>2021.01.01</dt>
           <dd>タイトルタイトルタイトルタイトル</dd>
+          <dt>2021.01.01</dt>
+          <dd>タイトルタイトルタイトルタイトル</dd>
+          <dt>2021.01.01</dt>
+          <dd>タイトルタイトルタイトルタイトル</dd>
         </dl>
       </section>
       <section id="products1" class="main__products wrapper">
@@ -51,7 +58,7 @@
         </h2>
         <div class="main__products-item">
           <img src="images/products1.jpeg" alt="" />
-          <p class="main-products-text">
+          <p class="main__products-text">
             テキストテキスト<br />
             テキストテキスト
           </p>
@@ -64,13 +71,13 @@
         </h2>
         <div class="main__products-item">
           <img src="images/products2.jpeg" alt="" />
-          <p class="main-products-text">
+          <p class="main__products-text">
             テキストテキスト<br />
             テキストテキスト
           </p>
         </div>
       </section>
-      <div class="main__shop">
+      <div id="shop">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12966.291594472039!2d139.73365084999998!3d35.6628931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9d3c1c9187%3A0x48f9c248e9169cfe!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo!5e0!3m2!1sja!2sjp!4v1641292138590!5m2!1sja!2sjp"
           width="600"
@@ -84,8 +91,7 @@
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__left">
-          <p><a href="#" target="_blank">オンラインストアを見る</a></p>
-          <p><a href="mailto:xxxxx@xxx.xxx.com">お問い合わせ</a></p>
+          <p><a href="#" target="_blank">オンラインストアを見る</a>｜<a href="mailto:xxxxx@xxx.xxx.com">お問い合わせ</a></p>
         </div>
         <div class="footer__right">
           <div class="footer__logo">
@@ -102,7 +108,7 @@
           </ul>
         </div>
       </div>
-      <p>&copy; SOUSAKU</p>
+      <p class="footer__copyright">&copy; SOUSAKU</p>
     </footer>
     <script src="scripts/main.js"></script>
   </body>
