@@ -1,0 +1,119 @@
+/******************************************************************
+
+Stylesheet: 768px以上のモニタで適用
+
+******************************************************************/
+
+.header {
+  padding: 60px 80px;
+  background-image: url(../../images/mainvisual-pc.jpeg);
+  margin-bottom: 180px;
+
+  &__online {
+    left: 40px;
+    bottom: 30px;
+  }
+}
+
+.main {
+
+  #news {
+    margin-bottom: 180px;
+  }
+
+  &__list {
+    padding: 80px 100px 0 0;
+
+    dt {
+      padding: 15px 30px 15px 5px;
+      &:nth-of-type(n + 4) {
+        display: block;
+      }
+    }
+
+    dd {
+      padding: 15px 0 15px 30px;
+      &:nth-of-type(n + 3) {
+        border-left: 0px;
+      }
+      &:nth-of-type(n + 4) {
+        display: block;
+        border-left: 0px;
+      }
+      &:last-of-type {
+        border-left: 1px solid $cBlack;
+      }
+    }
+  }
+
+  #products1 {
+    margin-bottom: 180px;
+    
+    & .section-title {
+      margin-left: 20px;
+      & .ja{
+        font-size: 32px;
+        margin-bottom: 18px;
+      }
+      & .en{
+        font-size: 14px;
+        display: inline;
+      }
+    }
+
+    .main__products-item {
+      width: 65%;
+      margin-top: 100px;
+    }
+
+    .main__products-text {
+      width: 56%;
+      padding: 50px 0;
+      font-size: 16px;
+    }
+  }
+
+  #products2 {
+    margin-bottom: 180px;
+    
+    & .section-title {
+      margin-right: 20px;
+      & .ja{
+        font-size: 32px;
+        margin-bottom: 18px;
+      }
+      & .en{
+        font-size: 14px;
+        display: inline;
+      }
+    }
+
+    .main__products-item {
+      width: 65%;
+      margin-top: 100px;
+    }
+
+    .main__products-text {
+      width: 56%;
+      padding: 50px 0;
+      font-size: 16px;
+    }
+  }
+}
+
+.footer {
+  padding: 80px 80px 30px 30px;
+
+  &__logo {
+    margin-left: 60px;
+  }
+
+  &__menu {
+    margin: 0 60px 0 0;
+    font-size: 16px;
+
+    & li:nth-child(2) {
+      padding: 0 25px;
+    }
+  }
+}

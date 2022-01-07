@@ -50,13 +50,7 @@ img {
   line-height: 1;
 }
 
-.section-title .en {
-  display: block;
-  margin-left: 15px;
-}
-
 .section-title .ja {
-  display: block;
   letter-spacing: 0.1em;
 }
 
@@ -132,6 +126,15 @@ img {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   margin-bottom: 80px;
+}
+
+.main #news .section-title .ja {
+  display: block;
+}
+
+.main #news .section-title .en {
+  display: block;
+  margin-left: 15px;
 }
 
 .main__list {
@@ -336,60 +339,104 @@ img {
   margin: 0;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   /******************************************************************
 
-Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+Stylesheet: 768px以上のモニタで適用
 
 ******************************************************************/
-}
-
-@media (min-width: 600px) {
-  /******************************************************************
-
-Stylesheet: 600px以上のタブレットやモニタで適用
-
-******************************************************************/
-}
-
-@media (min-width: 960px) {
-  /******************************************************************
-
-Stylesheet: 960px以上のモニタで適用
-
-******************************************************************/
-}
-
-@media (min-width: 1280px) {
-  /******************************************************************
-
-Stylesheet: 1280px以上のモニタで適用
-
-******************************************************************/
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /******************************************************************
-
-Stylesheet: Retinaディスプレイで適用
-
-******************************************************************/
-  /* 
-
-EXAMPLE 
-.icon {
-	background: url(images/test@2x.png) no-repeat;
-	background-size: 24px 24px;
-}
-
-*/
-}
-
-@media print {
-  /******************************************************************
-
-Stylesheet: プリンタのみに適用
-
-******************************************************************/
+  .header {
+    padding: 60px 80px;
+    background-image: url(../../images/mainvisual-pc.jpeg);
+    margin-bottom: 180px;
+  }
+  .header__online {
+    left: 40px;
+    bottom: 30px;
+  }
+  .main #news {
+    margin-bottom: 180px;
+  }
+  .main__list {
+    padding: 80px 100px 0 0;
+  }
+  .main__list dt {
+    padding: 15px 30px 15px 5px;
+  }
+  .main__list dt:nth-of-type(n + 4) {
+    display: block;
+  }
+  .main__list dd {
+    padding: 15px 0 15px 30px;
+  }
+  .main__list dd:nth-of-type(n + 3) {
+    border-left: 0px;
+  }
+  .main__list dd:nth-of-type(n + 4) {
+    display: block;
+    border-left: 0px;
+  }
+  .main__list dd:last-of-type {
+    border-left: 1px solid black;
+  }
+  .main #products1 {
+    margin-bottom: 180px;
+  }
+  .main #products1 .section-title {
+    margin-left: 20px;
+  }
+  .main #products1 .section-title .ja {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+  .main #products1 .section-title .en {
+    font-size: 14px;
+    display: inline;
+  }
+  .main #products1 .main__products-item {
+    width: 65%;
+    margin-top: 100px;
+  }
+  .main #products1 .main__products-text {
+    width: 56%;
+    padding: 50px 0;
+    font-size: 16px;
+  }
+  .main #products2 {
+    margin-bottom: 180px;
+  }
+  .main #products2 .section-title {
+    margin-right: 20px;
+  }
+  .main #products2 .section-title .ja {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+  .main #products2 .section-title .en {
+    font-size: 14px;
+    display: inline;
+  }
+  .main #products2 .main__products-item {
+    width: 65%;
+    margin-top: 100px;
+  }
+  .main #products2 .main__products-text {
+    width: 56%;
+    padding: 50px 0;
+    font-size: 16px;
+  }
+  .footer {
+    padding: 80px 80px 30px 30px;
+  }
+  .footer__logo {
+    margin-left: 60px;
+  }
+  .footer__menu {
+    margin: 0 60px 0 0;
+    font-size: 16px;
+  }
+  .footer__menu li:nth-child(2) {
+    padding: 0 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
