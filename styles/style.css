@@ -55,7 +55,7 @@ img {
 }
 
 .header {
-  background-image: url(../../images/mainvisual-sp.jpeg);
+  background-image: url(../images/mainvisual-sp.jpeg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -347,7 +347,7 @@ Stylesheet: 768px以上のモニタで適用
 ******************************************************************/
   .header {
     padding: 60px 80px;
-    background-image: url(../../images/mainvisual-pc.jpeg);
+    background-image: url(../images/mainvisual-pc.jpeg);
     margin-bottom: 180px;
   }
   .header__online {
