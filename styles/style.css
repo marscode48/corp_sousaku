@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: "Noto Serif JP", serif;
+  line-height: normal;
+  background-color: #E6E2D7;
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm, .section-title .en, #products1 .main__products-text, #products2 .main__products-text, .footer__inner {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 16px;
+}
+
+.font-lg, .section-title .ja {
+  font-size: 28px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1024px;
+}
+
+.section-title {
+  font-weight: normal;
+  margin: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  line-height: 1;
+}
+
+.section-title .en {
+  display: block;
+  margin-left: 15px;
+}
+
+.section-title .ja {
+  display: block;
+  letter-spacing: 0.1em;
+}
+
+.header {
+  background-image: url(../../images/mainvisual-sp.jpeg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 80px;
+  padding: 20px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  position: relative;
+}
+
+.header__logo {
+  margin: 0 0 0 60px;
+  line-height: 1;
+}
+
+.header__logo img {
+  width: 40px;
+}
+
+.header__nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.header__nav ul li {
+  margin-left: 25px;
+}
+
+.header__nav ul li:last-child {
+  margin-left: 0;
+}
+
+.header__nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.header__online {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+}
+
+.header__online a {
+  display: block;
+  padding: 30px 18px;
+  border: 1px solid #cccccc;
+}
+
+.header__online a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.main #news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 80px;
+}
+
+.main__list {
+  margin: 0;
+  padding: 20px 30px 0 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.main__list dt {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 15px 12px 15px 5px;
+  border-right: 1px solid black;
+}
+
+.main__list dt:nth-of-type(n + 4) {
+  display: none;
+}
+
+.main__list dd {
+  margin: 0;
+  padding: 15px 0px 15px 12px;
+}
+
+.main__list dd:nth-of-type(n + 4) {
+  display: none;
+}
+
+.main__list dd:nth-of-type(3) {
+  border-left: 1px solid black;
+}
+
+.main #products1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.main__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.main #products1 .section-title {
+  margin-left: 10px;
+}
+
+.main #products1 .section-title .ja {
+  font-size: 24px;
+}
+
+.main #products1 .section-title .en {
+  display: none;
+}
+
+#products1 .main__products-item {
+  margin-top: 70px;
+  width: 90%;
+  position: relative;
+}
+
+#products1 .main__products-text {
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  background-color: rgba(249, 233, 6, 0.6);
+  color: white;
+  margin: 0;
+  padding: 30px 0;
+  width: 64%;
+  text-align: center;
+}
+
+.main #products2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main #products2 .section-title {
+  margin-right: 10px;
+}
+
+.main #products2 .section-title .ja {
+  font-size: 24px;
+}
+
+.main #products2 .section-title .en {
+  display: none;
+}
+
+#products2 .main__products-item {
+  margin-top: 70px;
+  width: 90%;
+  position: relative;
+}
+
+#products2 .main__products-text {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  background-color: rgba(149, 42, 38, 0.6);
+  color: white;
+  margin: 0;
+  padding: 30px 0;
+  width: 64%;
+  text-align: center;
+}
+
+.main #shop iframe {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.footer {
+  padding: 40px 20px 30px 20px;
+  background-color: black;
+  color: white;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.footer__left {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer__left p {
+  margin: 0;
+}
+
+.footer__left p a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__right {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.footer__logo {
+  margin-left: 25px;
+  width: 40px;
+}
+
+.footer__info {
+  margin: 0;
+  line-height: 2;
+}
+
+.footer__info a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__menu {
+  margin: 0 25px 0 0;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__menu li:nth-child(2) {
+  padding: 0 10px;
+}
+
+.footer__menu li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+}
+
+@media (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /******************************************************************
+
+Stylesheet: Retinaディスプレイで適用
+
+******************************************************************/
+  /* 
+
+EXAMPLE 
+.icon {
+	background: url(images/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+*/
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */
